@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Success Message</title>
+		<%- include('../import/head.ejs'); -%>
+	</head>
+	<body>
+		<div class="container"></div>
+		<%- include('../import/scripts.ejs'); -%>
+		<script>
+			Swal.fire({
+				title: "EXITOSO!",
+				text: "Mensaje enviado correctamente a su destino",
+				icon: "success",
+				showCancelButton: false, // There won't be any cancel button
+				showConfirmButton: false, // There won't be any confirm button
+			});
+		</script>
+	</body>
+</html>
